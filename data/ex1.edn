@@ -1,0 +1,17 @@
+{
+ :profs  [{:name "jake" :subjects  ["matan" "lin"]}
+          {:name "bruce" :subjects ["matan" "geom"]}
+          {:name "liz" :subjects   ["lin" "dif"]}]
+ :groups [{:id "a" :subj ["dif" "lin"]}
+          {:id "b" :subj ["dif" "lin"]}
+          {:id "c" :subj ["dif" "lin"]}]
+ :cabinets [{:id '1 :size 1} 
+            {:id '2 :size 3}
+            {:id '3 :size 2}]
+ :subjs  [{:name "dif" :qty 10}
+          {:name "matan" :qty 20}
+          {:name "lin" :qty 15}
+          {:name "geom" :qty 7}]
+ :slots  [[8.45 9.30]
+         [9.45 10.30]
+         [10.45 11.30]]}
