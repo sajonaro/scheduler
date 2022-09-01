@@ -1,10 +1,11 @@
 {:paths ["src"]
- :deps {net.mikera/core.matrix {:mvn/version "0.62.0"}
-        org.clojure/clojure    {:mvn/version "1.11.1"}
+ :deps {org.clojure/clojure    {:mvn/version "1.11.1"}
         org.clojure/tools.cli  {:mvn/version "1.0.206"}}
- :aliases {:run   {:paths ["src"]
-                   :exec-fn scheduler/-main}
-           :jar {:deps {io.github.clojure/tools.build {:git/tag "v0.8.3" :git/sha "0d20256"}}
-                   :exec-fn jar
+ :aliases {
+           ;;Run with clj -M:main "path ro data.edn"
+           :main {:main-opts ["-m" "main"]
+                  :paths ["src"]}
+           ;; Run with clj -T:build function-in-build
+           :build {:deps {io.github.clojure/tools.build {:git/tag "v0.8.3" :git/sha "0d20256"}}
                    :ns-default build
                    :paths ["."]}}}
