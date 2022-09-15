@@ -49,7 +49,7 @@
         lessonsPerDay (count (select [:time-slots ALL] curriculum))]
     {:total-number-of-lessons numlessons
      :number-of-weeks (Math/floor (/  numlessons (* days lessonsPerDay)))
-     :remainder-lessons (mod numlesso ns (* days lessonsPerDay))}))
+     :remainder-lessons (mod numlessons (* days lessonsPerDay))}))
 
 
 
