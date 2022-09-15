@@ -25,10 +25,25 @@
 ;; :days [:monday :tuesday :wednesday]}
 
 ;;;this is the data structure we expect from processing ex1.edn
-{
-  :monday    {:1 {} :2 {} :3 {} :4 {} :5 {}}
-  :tuesday   {:1 {} :2 {} :3 {} :4 {} :5 {}}
-  :wednesday {:1 {} :2 {} :3 {} :4 {} :5 {}}
+{ :schedule [
+          {:week-number 1
+           :monday      {:1 {} :2 {} :3 {} :4 {} :5 {}}
+           :tuesday     {:1 {} :2 {} :3 {} :4 {} :5 {}}
+           :wednesday   {:1 {} :2 {} :3 {} :4 {} :5 {}}}
+          
+          {:week-number 2
+           :monday      {:1 {} :2 {} :3 {} :4 {} :5 {}}
+           :tuesday     {:1 {} :2 {} :3 {} :4 {} :5 {}}
+           :wednesday   {:1 {} :2 {} :3 {} :4 {} :5 {}}}
+          
+          {:week-number 3
+           :monday      {:1 {} :2 {} :3 {} :4 {} :5 {}}
+           :tuesday     {:1 {} :2 {} :3 {} :4 {} :5 {}}
+           :wednesday   {:1 {} :2 {} :3 {} :4 {} :5 {}}}
+          
+          {:week-number 4
+           :monday      {:1 {} :2 {} :3 {} :4 {} :5 {}}
+           :tuesday     {:1 {} :2 {}}}]
   
   ;;;above data has following structure  
   ;;; :dayOfWeek { :timeslot  {
